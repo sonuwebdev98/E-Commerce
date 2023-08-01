@@ -1,0 +1,36 @@
+
+@media only screen and (max-width:1170px) {
+
+    .container-fluid {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    
+}
+
+@media only screen and (max-width:991px){
+    
+}
+
+
+@media only screen and (max-width:991px){
+
+    .heading-one {
+        font-size: 4rem;
+    }
+
+    .banners-sec .banners-left-siderbar {
+        width: 100%;     
+    }
+
+
+    .banners-sec .banners-right-slider {
+        width: 100%;
+        padding-left: initial;      
+    }
+}
+
+
+
+

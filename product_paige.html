@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Commerce</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+ <!--  jquery  -->
+
+ <!-- owl-carousel css link  -->
+ <link rel="stylesheet" href="css/owl.carousel.css">
+ <link rel="stylesheet" href="css/owl.theme.default.css">
+ <!-- <link rel="stylesheet" href="css/owl.theme.green.css">  -->
+
+
+ <!-- owl-carousel and jquery  link  -->
+ <!-- <script src="js/jquery.min.js"></script>
+ <script src="js/owl.carousel.min.js"></script> -->
+ 
+
+<!-- swiper  -->
+<link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+
+  
+    <!-- css  -->
+    <!-- <link rel="stylesheet" href="css/global.css"> -->
+    <link rel="stylesheet" href="css/index.css">   
+</head>
+<body>
+
+    
+
+<!--========== header starst here  ========== -->
+
+<header id="header">   
+
+    <!-- top header starts here   -->
+     <div class="top-header container-fluid">
+            <div class="inner d-flex">
+                <div class="top-header-left">
+                    <p class="top-header-headings">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!  <a href="#" class="shop-now">Shop  now</a></p>
+                </div>
+                <div class="top-header-right">
+                    <div class="top-header-dropdown">
+                        <ul class="select-lang ">
+                            <li class="sel-lang-list"><a class="lang-link" href="#">English <i class="fas fa-regular fa-angle-down"></i></a> 
+                                <ul class="lang-dropdown-menu">
+                                    <li class="lang-list"><a class="lang-link" href="#">Hindi</a></li>
+                                    <li class="lang-list"><a class="lang-link" href="#">Punjabi</a></li>
+                                    <li class="lang-list"><a class="lang-link" href="#">English USA</a></li>
+                                    <li class="lang-list"><a class="lang-link" href="#">English Native</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+     </div>
+
+     <!-- bottom header starts here  -->
+     <div class="bottom-header container-fluid">
+         <nav class="inner d-flex" id="navbar"> 
+
+            <div class="ex-heading">
+                <h3 class="heading-theree">exclusive</h3> 
+            </div>
+
+
+            <div class="icon-bar"> 
+
+                <div id="hamburger" onclick="this.classList.toggle('open');">
+                    <svg width="50" height="50" viewBox="0 0 100 100">
+                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg> 
+                </div>
+            </div>
+
+
+           <div class="menu-bar d-flex">
+
+            <div class="menu-list">
+                <ul class="nav-menu d-flex">
+                    <li class="nav-list"><a class="nav-link active-nav-link" href="#">home</a></li>
+                    <li class="nav-list"><a class="nav-link" href="contact.html">contact</a></li>
+                    <li class="nav-list"><a class="nav-link" href="about.html">about</a></li>
+                    <li class="nav-list"><a class="nav-link" href="signup_paige.html">sign up</a></li>                    
+                </ul>
+            </div>
+           
+            <div class="right-menu-bar d-flex">
+                <div class="search-bar">
+                    <form action="#" id="form">
+                        <label for="forsearch"></label>
+                        <input type="search" id="search" placeholder="what are you looking for?">
+                        <i class="fa-solid fa-magnifying-glass search-icons"></i>
+                    </form>
+                </div> 
+                <div class="saved-items right-items"><i class="fas fa-thin fa-heart"></i></div>   
+                <div class="add-to-card right-items"><i class="fas fa-light fa-cart-plus"></i></div>
+                <div class="user-account right-items"><i class="fas fa-light fa-user user-acount-details"></i> 
+                     
+                    <ul class="user-menu">
+                        <li class="user-menu-list"><a class="user-menu-link" href="#"><i class="fas fa-light  fa-user user-acount-list"></i>Manage My Account</a></li>
+                        <li class="user-menu-list"><a class="user-menu-link" href="#"><i class="fas fa-light fa-bag-shopping"></i>My Order</a></li>
+                        <li class="user-menu-list"><a class="user-menu-link" href="#"><i class="fas fa-sharp fa-light fa-circle-xmark"></i>My Cancellations</a></li>
+                        <li class="user-menu-list"><a class="user-menu-link" href="#"><i class="fas fa-light fa-star"></i>My Reviews</a></li> 
+                        <li class="user-menu-list"><a class="user-menu-link" href="#"><i class="fas fa-light fa-right-from-bracket"></i>Logout</a></li>
+                    </ul>
+                </div> 
+                        
+            </div>
+            
+           </div>
+
+
+
+           
+
+         </nav>
+     </div>
+</header>
+
+<!--========== header ends here  ========== -->
+
+<!-- ==========  product-items section starts here ========== -->
+
+<section  class="container-fluid"> 
+
+    <div class="inner">
+
+        <!-- breadcrumb starts here  -->
+       <div class="breadcrumb-sec">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a class="breadcrumb-link" href="account.html">Account /</a></li>
+              <li class="breadcrumb-item"><a class="breadcrumb-link" href="product_paige.html">Gaming /</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a class="breadcrumb-link breadcrumb-active-link" href="product_paige.html">Havic HV G-92 Gamepad</a></li>
+            </ol>
+          </nav>
+       </div>
+
+       <div class="products-items d-flex">
+             <div class="product-items-left">
+                <div class="products-items-all-img product-contents">
+                    <div class="product-img">
+                       <img class="product-small-img" src="images/product-paige-img/gamepad/gamepad-1.png" alt="gamepad-1"  onmouseover="clickimg(this)" />
+                    </div>
+   
+                    <div class="product-img">
+                       <img class="product-small-img" src="images/product-paige-img/gamepad/gamepad-2.png" alt="gamepad-2" onmouseover="clickimg(this)" />
+                    </div>
+   
+                    <div class="product-img">
+                       <img class="product-small-img" src="images/product-paige-img/gamepad/gamepad-3.png" alt="gamepad-3" onmouseover="clickimg(this)" />
+                    </div>
+   
+                    <div class="product-img">
+                       <img class="product-small-img" src="images/product-paige-img/gamepad/gamepad-4.png" alt="gamepad-4" onmouseover="clickimg(this)" />
+                    </div>
+   
+               </div>
+   
+               <div class="products-items-mein-img product-contents ">
+                   <div class="product-img-view d-flex"> 
+                       <img id="active-img-box" class="product-big-img" src="images/product-paige-img/gamepad/gamepad-0.png" alt="gamepad-0" />
+                    </div>
+               </div>
+             </div>
+
+            <div class="products-items-content product-contents d-flex">
+                 <div class="products-items-top-heading">
+                    <h3 class="heading-theree">Havic HV G-92 Gamepad</h3>
+                 </div>
+
+                 <div class="products-items-rating">
+                    <div class="start-icons d-flex">
+                        <div class="start">
+                            <i class="fas fa-thin fa-star star-icon"></i>
+                            <i class="fas fa-thin fa-star star-icon"></i>
+                            <i class="fas fa-thin fa-star star-icon"></i>
+                            <i class="fas fa-thin fa-star star-icon"></i>
+                            <i class="fas fa-thin fa-star star-icon"></i>
+                        </div>
+
+                        <div class="review-stock d-flex">
+                            <span class="reviews">(150 review) | </span> 
+                            <p class="stocks">in stock</p>
+                        </div>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="price">$192.00</span>
+                    </div>
+
+                    <div class="product-details">
+                        <p class="product-description">
+                            PlayStation 5 Controller Skin High quality vinyl with air
+                             channel adhesive for easy bubble free install & mess 
+                             free removal Pressure sensitive.
+                        </p>
+                    </div>
+                 </div>
+
+
+
+                 <div class="product-customize">
+                      <div class="product-color">
+                          <form action="#">
+                            <label class="product-color-heaing" for="forradio">color:</label>
+                            <input type="radio" name="color" id="color" >
+                            <input type="radio" name="color" id="color" >
+                          </form>
+                      </div>
+
+
+                      <div class="producut-size">
+                            <span class="producut-size-text">size:</span>
+
+                            <span class="products-sizes">
+                                <input type="submit" id="submit-size" value="XS">
+                            </span>
+
+                            <span class="products-sizes">
+                                <input type="submit" id="submit-size" value="S">
+                            </span>
+
+                            <span class="products-sizes">
+                                <input type="submit" id="submit-size" value="M"> 
+                            </span>
+
+                            <span class="products-sizes">
+                                <input type="submit" id="submit-size" value="L">
+                            </span>
+
+                            <span class="products-sizes">
+                                <input type="submit" id="submit-size" value="XL">
+                            </span>
+                            
+                      </div>
+
+                      <div class="product-quantity d-flex">
+                         <div class="product-data">
+                            <form action="#">
+                                <div class="data-change d-flex">
+                                 <button class="increment active-value">-</button> 
+                                 <span class="change-data">0</span>
+                                 <button class="decrement">+</button>
+                                </div>
+                                </form>
+                         </div>
+
+                         <div class="buy-now">
+                            <a href="#" class="view-all-pro-btns btn-animate buy-nows"> buy now</a>
+                         </div>
+
+                         <div class="saved-product">
+                            <i class="fas fa-thin fa-heart save-product-icon"></i>
+                         </div>
+                      </div>
+
+                      <div class="product-delivery">
+                         <div class="delivery d-flex">
+                            <div class="delivery-icon center-items"><img class="delivery-icons" src="images/product-paige-img/gamepad/icon-delivery.svg" alt="icon-delivery" /></div>
+                            <div class="delivery-text">
+                                <h5 class="heading-five">free delivery</h5>
+                                <p class="para">Enter your postal code for Delivery Availability</p>
+                            </div>
+                         </div>
+
+                         <div class="delivery d-flex">
+                            <div class="delivery-icon center-items"><img class="delivery-icons" src="images/product-paige-img/gamepad/Icon-return.svg" alt="Icon-return" /></div>
+                            <div class="delivery-text">
+                                <h5 class="heading-five">Return Delivery</h5>   
+                                <p class="para">Free 30 Days Delivery Returns. Details</p>
+                            </div>
+                         </div>
+
+                      </div>
+
+
+
+                 </div>
+                
+            </div>
+            
+       </div>
+          
+
+    </div>
+
+
+</section>
+
+
+ 
+
+
+
+
+
+<!--==================== todays sections starts here =====================-->
+
+
+<section class="container-fluid section">
+
+    <div class="inner">
+
+             <!-- todays-heading  -->
+             <div class="todays-heading"> 
+                   <div class="headings">
+                        <h5 class="heading-five danger-color text-capitalize">Related Item</h5> 
+                   </div>  
+                   
+                
+             </div>
+
+            
+     <!--==================== todays-list-slider  =====================-->
+             <div class="todays-list-slider">  
+                    
+                <div class="owl-carousel owl-carousel-one owl-theme"> 
+                    <div class="item">
+                        <div class="sale-items">
+                             <div class="sale-img"> 
+                                <img class="sale-img-1"  src="images/todaysales/wired-gamepad.png" alt="wired-gamepad" />
+                                <div class="discount">
+                                    <span class="discount-price">-40%</span>
+                                </div>
+
+                                <div class="saved_view_btns d-flex"> 
+                                    <i class="fas fa-sharp fa-light fa-heart saved-view-icon"></i> 
+                                    <i class="fas fa-light fa-eye saved-view-icon"></i> 
+                                </div>
+                            </div>
+
+                            <div class="add-cart">
+                                <a class="add-to-cart" href="#">add to cart</a>  
+                            </div>
+
+                            <div class="sale-heading">
+                                <h5 class="heading-five">HAVIT HV-G92 Gamepad</h5>
+                                <h5 class="heading-five price-up-down"> <span class="danger-color">$120</span> <del>$160</del></h5>
+
+                                <div class="sale-rating d-flex"> 
+
+                                    <div class="star-rating d-flex">   
+                                      <img class="star" src="images/star.png" alt="star" />   
+                                      <img class="star" src="images/star.png" alt="star" />
+                                      <img class="star" src="images/star.png" alt="star" />
+                                      <img class="star" src="images/star.png" alt="star" />
+                                      <img class="star" src="images/star.png" alt="star" />    
+                                    </div>
+
+                                    <div class="sale-quantity"><span class="quantity-items">(88)</span></div>
+
+
+                                </div> 
+
+                            </div>                            
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="sale-items">
+                            <div class="sale-img">
+                               <img  class="sale-img-1" src="images/todaysales/rgb-keybord.png" alt="wired-gamepad" />
+
+                               <div class="discount">
+                                <span class="discount-price">-40%</span>
+                            </div>
+
+                            <div class="saved_view_btns d-flex">
+                                <i class="fas fa-sharp fa-light fa-heart saved-view-icon"></i>
+                                <i class="fas fa-light fa-eye saved-view-icon"></i>
+                            </div>
+                           </div>
+
+                           <div class="add-cart">
+                               <a class="add-to-cart" href="#">add to cart</a>
+                           </div>
+
+                           <div class="sale-heading">
+                               <h5 class="heading-five">AK-900 Wired Keyboard</h5>
+                               <h5 class="heading-five price-up-down"> <span class="danger-color">$960</span> <del>$1160</del></h5>
+
+                               <div class="sale-rating d-flex">
+                                   <div class="star-rating d-flex">
+                                     <img class="star" src="images/star.png" alt="star" />
+                                     <img class="star" src="images/star.png" alt="star" />
+                                     <img class="star" src="images/star.png" alt="star" />
+                                     <img class="star" src="images/star.png" alt="star" />
+                                     <img class="star" src="images/star.png" alt="star" />    
+                                   </div>
+
+                                   <div class="sale-quantity"><span class="quantity-items">(75)</span></div>
+
+
+                               </div> 
+
+                           </div>                            
+                       </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="sale-items">
+                            <div class="sale-img">
+                               <img class="sale-img-1" src="images/todaysales/monitor.png" alt="wired-gamepad" />
+
+                               <div class="discount">
+                                <span class="discount-price">-40%</span>
+                            </div>
+
+                            <div class="saved_view_btns d-flex">
+                                <i class="fas fa-sharp fa-light fa-heart saved-view-icon"></i>
+                                <i class="fas fa-light fa-eye saved-view-icon"></i>
+                            </div>
+                           </div>
+
+                           <div class="add-cart">
+                               <a class="add-to-cart" href="#">add to cart</a>
+                           </div>
+
+                           <div class="sale-heading">
+                               <h5 class="heading-five">IPS LCD Gaming Monitor</h5>
+                               <h5 class="heading-five price-up-down"> <span class="danger-color">$370</span> <del>$400</del></h5>
+
+                               <div class="sale-rating d-flex">
+                                   <div class="star-rating d-flex">
+                                     <img class="star" src="images/star.png" alt="star" />
+                                     <img class="star" src="images/star.png" alt="star" />
+                                     <img class="star" src="images/star.png" alt="star" />
+                                     <img class="star" src="images/star.png" alt="star" />
+                                     <img class="star" src="images/star.png" alt="star" />    
+                                   </div>
+
+                                   <div class="sale-quantity"><span class="quantity-items">(99)</span></div>
+
+
+                               </div> 
+
+                           </div>                            
+                       </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="sale-items">
+                            <div class="sale-img">
+
+                               <img class="sale-img-1" src="images/todaysales/chairs.png" alt="wired-gamepad" />
+
+                               <div class="discount">
+                                  <span class="discount-price">-40%</span>
+                               </div>
+
+                            <div class="saved_view_btns d-flex">
+                                <i class="fas fa-sharp fa-light fa-heart saved-view-icon"></i> 
+                                <i class="fas fa-light fa-eye saved-view-icon"></i>
+                            </div>
+
+                           </div>
+
+                           <div class="add-cart">
+                               <a class="add-to-cart" href="#">add to cart</a>
+                           </div>
+
+                           <div class="sale-heading">
+                               <h5 class="heading-five">S-Series Comfort Chair </h5>
+                               <h5 class="heading-five price-up-down"> <span class="danger-color">$375</span> <del>$400</del></h5>
+
+                               <div class="sale-rating d-flex">
+                                   <div class="star-rating d-flex">
+                                     <img class="star" src="images/star.png" alt="star" />
+                                     <img class="star" src="images/star.png" alt="star" />
+                                     <img class="star" src="images/star.png" alt="star" />
+                                     <img class="star" src="images/star.png" alt="star" />
+                                     <img class="star" src="images/star.png" alt="star" />    
+                                   </div>
+
+                                   <div class="sale-quantity"><span class="quantity-items">(99)</span></div>
+
+
+                               </div> 
+
+                           </div>                            
+                       </div>
+                    </div>
+                
+                  
+                </div>
+
+                <div class="view-all-product">
+                    <a href="#" class="view-all-pro-btns btn-animate">view all product</a> 
+                </div>
+          
+
+             </div>
+
+              
+
+        </div>
+
+</section>
+<!--==================== todays sections ends here =====================-->
+
+
+
+<!--==================== footer sections sections starts here =====================-->
+ <footer class="container-fluid footer-section">
+      <div class="inner">
+         <div class="footer-in d-flex">
+             <div class="footer-content"> 
+                <h3 class="heading-theree">Exclusive</h3>
+                <h5 class="heading-five">Subscribe</h5> 
+                <p class="footer-para">Get 10% off your first order</p>  
+                <form action="#" id="form">
+                    <input id="mail" type="email" id="email" placeholder="enter your email">                    
+                    <img class="mail-icons" src="images/media-icons/mail.svg" alt="mail">
+                </form>
+
+             </div>
+
+             <div class="footer-content">
+                <h3 class="heading-theree">Support</h3>
+                <p class="footer-para">
+                    111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh. 
+                </p>
+
+                <p class="footer-para"><a class="mail-eommerce" href="#">exclusive@gmail.com</a></p>
+                <a class="call-n" href="#">+88015-88888-9999</a>
+             </div> 
+
+             <div class="footer-content">
+                <h3 class="heading-theree">Account</h3>
+                <ul class="footer-sub-list">
+                    <li class="footer-list"><a class="footer-link" href="#">My Account</a></li>
+                    <li class="footer-list"><a class="footer-link" href="#">Login / Register</a></li>
+                    <li class="footer-list"><a class="footer-link" href="#">Cart</a></li>
+                    <li class="footer-list"><a class="footer-link" href="#">Wishlist</a></li>
+                    <li class="footer-list"><a class="footer-link" href="#">Shop</a></li>
+                </ul>
+             </div>
+
+             <div class="footer-content">
+                <h3 class="heading-theree">Quick Link</h3>
+                <ul class="footer-sub-list">
+                    <li class="footer-list"><a class="footer-link" href="#">Privacy Policy</a></li>
+                    <li class="footer-list"><a class="footer-link" href="#">Terms Of Use</a></li>
+                    <li class="footer-list"><a class="footer-link" href="#">FAQ</a></li>
+                    <li class="footer-list"><a class="footer-link" href="#">Contact</a></li>
+                  
+                </ul>
+
+             </div>
+
+             <div class="footer-content">
+                <h3 class="heading-theree">Download App</h3>
+                <p class="footer-t">Save $3 with App New User Only</p>
+                <div class="ecommerce-media d-flex">
+                    <div class="eco-media eco-media-o">
+                         <div class="qr-code"><img src="images/footer/Qr Code.png" alt="Qr Code.png" /></div>
+                    </div>
+                    <div class="eco-media eco-media-t d-flex">
+                         <div class="store"><img class="store-icon" src="images/footer/download-appstore.png" alt="download-appstore" /></div>
+                         <div class="store"><img class="store-icon" src="images/footer/GooglePlay.png" alt="GooglePlay" /></div>
+                    </div>
+
+                </div>
+                <div class="social-media d-flex">
+                    <img class="social-media-link" src="images/media-icons/facebook.svg" alt="facebook" /> 
+                    <img class="social-media-link" src="images/media-icons/twitter.png" alt="twitter" /> 
+                    <img class="social-media-link" src="images/media-icons/instagram.svg" alt="instagram" />
+                    <img class="social-media-link" src="images/media-icons/Icon-Linkedin.svg" alt="Icon-Linkedin" />
+                </div>
+             </div>
+
+         </div>
+         <div class="copyrights-sec">
+            <a href="#" class="copyrights">&copy; Copyright Rimel 2022. All right reserved</a>
+         </div>
+      </div>
+
+ </footer>
+
+<!--==================== footer sections sections ends here =====================-->
+
+
+
+
+
+
+
+
+
+<div class="top-bottom-btns"> 
+    <a href="#header"><i class="fas fa-regular fa-arrow-up fa-beat top-btm-btns"></i></a>
+ </div>
+
+
+
+
+
+<!-- ======= fontawesome 6 =======  --> 
+<script src="https://kit.fontawesome.com/b94d79425b.js" crossorigin="anonymous"></script>
+
+<!-- swiper js  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> 
+
+ <!-- owl-carousel and jquery  link  -->
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/index.js"></script>
+</body>
+</html>
