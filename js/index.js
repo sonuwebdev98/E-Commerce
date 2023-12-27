@@ -10,7 +10,7 @@ let active_menu = document.querySelector('.menu-bar')
 
 icon_bar.addEventListener('click' , function(){ 
 
-  active_menu.classList.toggle('active-menu-bar')
+  active_menu.classList.toggle('active-menu-bar') 
 })
 
 
