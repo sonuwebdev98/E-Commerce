@@ -157,6 +157,11 @@
   
  }
 
+ 
+ #header .bottom-header .right-menu-bar .right-items:hover{
+    color: var(--primary-color);
+ }
+
  #header .bottom-header .right-menu-bar .right-items
  .top-link{
     color: var(--dark-color);
