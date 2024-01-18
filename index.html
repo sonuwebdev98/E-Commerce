@@ -95,8 +95,8 @@
                     </form>
                 </div> 
                 <div class="saved-items right-items"><a class="top-link" href="wishlist.html"><i class="fas fa-thin fa-heart"></i></a></div>   
-                <div class="add-to-card right-items"><a class="top-link" href="cart.html"><i class="fas fa-light fa-cart-plus"></i></a></div>
-                <div class="user-account right-items"><a class="top-link" href="#"><i class="fas fa-light fa-user user-acount-details"></i> </a>
+                <div class="add-to-card right-items"><a class="top-link" href="cart.html"><i class="fas fa-light fa-cart-plus"><div id="cart_amount"></div></i></a></div>
+                <div class="user-account right-items"><a class="top-link" href="#"><i class="fas fa-light fa-user user-acount-details"></i> </a> 
                       
                     <ul class="user-menu">
                         <li class="user-menu-list"><a class="user-menu-link" href="#"><i class="fas fa-light  fa-user user-acount-list"></i>Manage My Account</a></li>
@@ -306,33 +306,38 @@
     <div class="inner">
 
              <!-- todays-heading  -->
-             <div class="todays-heading"> 
-                   <div class="headings">
-                        <h5 class="heading-five danger-color text-capitalize">today's</h5> 
+             <div class="todays-heading">  
+                   <div class="headings d-flex">  
+                        <h5 class="heading-five danger-color text-capitalize">today's</h5>                         
                    </div>  
+
+
+                   <div class="flash-heading"><h2 class="heading-two text-capitalize text-center title" id="end-date">Sale Start</h2></div>
                    
                    <div class="flash-sale-section d-flex">  
-                      <div class="flash-heading"><h2 class="heading-two text-capitalize">flash sales</h2></div>
+                    <div class="flash-heading"><h2 class="heading-two text-capitalize">flash sales</h2></div>
+                      
                       <div class="flash-sale-timing">
                            <div class="time-sec d-flex">
+
                             <div class="times">
-                                <h6 class="heading-six">days</h6> 
-                                <span class="time-loop">03</span>
+                                <label class="heading-six" for="">days</label>
+                                <input class="time-loop" type="number" readonly value="00">
                             </div>
 
                             <div class="times">
-                                <h6 class="heading-six">hour</h6>
-                                <span class="time-loop">23</span>
+                                <label class="heading-six" for="">hour</label>
+                                <input class="time-loop" type="number" readonly value="00">
+                            </div>
+
+                            <div class="times">                             
+                                <label class="heading-six" for="">minutes</label>
+                                <input class="time-loop" type="number" readonly value="00">
                             </div>
 
                             <div class="times">
-                                <h6 class="heading-six">minutes</h6>
-                                <span class="time-loop">19</span>
-                            </div>
-
-                            <div class="times">
-                                <h6 class="heading-six">second</h6>
-                                <span class="time-loop">56</span>
+                                <label class="heading-six" for="">second</label>
+                                <input class="time-loop" type="number" readonly value="00">
                             </div>
 
                            </div>
@@ -347,7 +352,7 @@
 
              
                     
-                <div class="owl-carousel owl-carousel-one owl-theme">
+                <div class="owl-carousel owl-carousel-one owl-theme" >
                     <!-- 1 -->                     
                     <div class="item" >
                         <div class="sale-items" id="item1">  
@@ -358,7 +363,7 @@
                                 </div>
 
                                 <div class="saved_view_btns d-flex"> 
-                                    <i class="fas fa-sharp fa-light fa-heart saved-view-icon"></i> 
+                                    <i class="fas fa-sharp fa-light fa-heart saved-view-icon save_to_whishlist"></i> 
                                     <i class="fas fa-light fa-eye saved-view-icon"></i> 
                                 </div>
                             </div>
@@ -368,7 +373,7 @@
                             </div>
 
                             <div class="sale-heading">
-                                <h5 class="heading-five" id="title">HAVIT HV-G92 Gamepad</h5>
+                                <h5 class="heading-five item-title" id="title">HAVIT HV-G92 Gamepad</h5>
                                 <h5 class="heading-five price-up-down" id="price"> <span class="danger-color">$120</span> <del>$160</del></h5>
 
                                 <div class="sale-rating d-flex"> 
@@ -393,7 +398,7 @@
                     <!-- 2  -->
 
 
-                    <div class="item">
+                   <div class="item"> 
                         <div class="sale-items">
                             <div class="sale-img">
                                <img  class="sale-img-1" src="images/todaysales/rgb-keybord.png" alt="wired-gamepad" />
@@ -403,7 +408,7 @@
                             </div>
 
                             <div class="saved_view_btns d-flex">
-                                <i class="fas fa-sharp fa-light fa-heart saved-view-icon"></i>
+                                <i class="fas fa-sharp fa-light fa-heart saved-view-icon save_to_whishlist"></i>
                                 <i class="fas fa-light fa-eye saved-view-icon"></i>
                             </div>
                            </div>
@@ -413,7 +418,7 @@
                            </div>
 
                            <div class="sale-heading">
-                               <h5 class="heading-five">AK-900 Wired Keyboard</h5>
+                               <h5 class="heading-five item-title">AK-900 Wired Keyboard</h5>
                                <h5 class="heading-five price-up-down"> <span class="danger-color">$960</span> <del>$1160</del></h5>
 
                                <div class="sale-rating d-flex">
@@ -445,7 +450,7 @@
                             </div>
 
                             <div class="saved_view_btns d-flex">
-                                <i class="fas fa-sharp fa-light fa-heart saved-view-icon"></i>
+                                <i class="fas fa-sharp fa-light fa-heart saved-view-icon save_to_whishlist"></i>
                                 <i class="fas fa-light fa-eye saved-view-icon"></i>
                             </div>
                            </div>
@@ -455,7 +460,7 @@
                            </div>
 
                            <div class="sale-heading">
-                               <h5 class="heading-five">IPS LCD Gaming Monitor</h5>
+                               <h5 class="heading-five item-title">IPS LCD Gaming Monitor</h5>
                                <h5 class="heading-five price-up-down"> <span class="danger-color">$370</span> <del>$400</del></h5>
 
                                <div class="sale-rating d-flex">
@@ -488,7 +493,7 @@
                                </div>
 
                             <div class="saved_view_btns d-flex">
-                                <i class="fas fa-sharp fa-light fa-heart saved-view-icon"></i> 
+                                <i class="fas fa-sharp fa-light fa-heart saved-view-icon save_to_whishlist"></i> 
                                 <i class="fas fa-light fa-eye saved-view-icon"></i>
                             </div>
 
@@ -499,8 +504,10 @@
                            </div>
 
                            <div class="sale-heading">
-                               <h5 class="heading-five">S-Series Comfort Chair </h5>
+                               <h5 class="heading-five item-title">S-Series Comfort Chair </h5>
                                <h5 class="heading-five price-up-down"> <span class="danger-color">$375</span> <del>$400</del></h5>
+
+
 
                                <div class="sale-rating d-flex">
                                    <div class="star-rating d-flex">
@@ -535,9 +542,27 @@
         </div>
 
 </section>
-<!--==================== todays sections ends here =====================-->
+<!--  ==================== todays sections ends here =====================   -->
 
-<!--==================== category-browser sections starts here =====================-->
+
+<!-- ==================== 
+    View Product sections starts here
+                       ===================== -->
+
+     
+
+
+
+
+<!-- ==================== 
+    View Product sections ends here
+                       ===================== -->
+
+
+
+<!-- ==================== 
+    category-browser sections starts here
+                       ===================== -->
 
 <section class="container-fluid">
 
@@ -649,7 +674,7 @@
                          <div class="sale-img"> 
                             <img class="sale-img-1"  src="images/thismonths/hoods.png" alt="wired-gamepad" />
                             <div class="discount">
-                                <span class="discount-price">-40%</span>
+                                <span class="discount-price">-50% </span>
                             </div>
 
                             <div class="saved_view_btns d-flex"> 
@@ -663,7 +688,7 @@
                         </div>
 
                         <div class="sale-heading">
-                            <h5 class="heading-five">HAVIT HV-G92 Gamepad</h5>
+                            <h5 class="heading-five item-title">HAVIT HV-G92 Gamepad</h5>
                             <h5 class="heading-five price-up-down"> <span class="danger-color">$120</span> <del>$160</del></h5>
 
                             <div class="sale-rating d-flex"> 
@@ -706,7 +731,7 @@
                        </div>
 
                        <div class="sale-heading">
-                           <h5 class="heading-five">AK-900 Wired Keyboard</h5>
+                           <h5 class="heading-five item-title">AK-900 Wired Keyboard</h5>
                            <h5 class="heading-five price-up-down"> <span class="danger-color">$960</span> <del>$1160</del></h5>
 
                            <div class="sale-rating d-flex">
@@ -748,7 +773,7 @@
                        </div>
 
                        <div class="sale-heading">
-                           <h5 class="heading-five">IPS LCD Gaming Monitor</h5>
+                           <h5 class="heading-five item-title">IPS LCD Gaming Monitor</h5>
                            <h5 class="heading-five price-up-down"> <span class="danger-color">$370</span> <del>$400</del></h5>
 
                            <div class="sale-rating d-flex">
@@ -777,7 +802,7 @@
                            <img class="sale-img-1" src="images/thismonths/books-tables.png" alt="wired-gamepad" />
 
                            <div class="discount">
-                              <span class="discount-price">-40%</span>
+                              <span class="discount-price item-title">-40%</span>
                            </div>
 
                         <div class="saved_view_btns d-flex">
@@ -821,7 +846,7 @@
             </div>
       
 
-         </div>
+         </div> 
 
     </div>
 
@@ -840,6 +865,8 @@
 
                           <div class="categories-banners-heading">
                             <h5 class="heading-five">categories</h5>
+                            
+                            
                             <h2 class="heading-one enhance-heading">Enhance Your <br> Music Experience</h2>
                           </div>
 
@@ -937,7 +964,7 @@
                             </div>
         
                             <div class="product-heading">
-                                <h5 class="heading-five">HAVIT HV-G92 Gamepad</h5>
+                                <h5 class="heading-five item-title">HAVIT HV-G92 Gamepad</h5>
                                 <h5 class="heading-five price-up-down"> <span class="danger-color">$120</span> <del>$160</del></h5>
         
                                 <div class="product-rating d-flex"> 
@@ -980,7 +1007,7 @@
                            </div>
         
                            <div class="product-heading">
-                               <h5 class="heading-five">AK-900 Wired Keyboard</h5>
+                               <h5 class="heading-five item-title">AK-900 Wired Keyboard</h5>
                                <h5 class="heading-five price-up-down"> <span class="danger-color">$960</span> <del>$1160</del></h5>
         
                                <div class="product-rating d-flex">
@@ -1022,7 +1049,7 @@
                            </div>
         
                            <div class="product-heading">
-                               <h5 class="heading-five">IPS LCD Gaming Monitor</h5>
+                               <h5 class="heading-five item-title">IPS LCD Gaming Monitor</h5>
                                <h5 class="heading-five price-up-down"> <span class="danger-color">$370</span> <del>$400</del></h5>
         
                                <div class="product-rating d-flex">
@@ -1066,7 +1093,7 @@
                            </div>
         
                            <div class="product-heading">
-                               <h5 class="heading-five">S-Series Comfort Chair </h5>
+                               <h5 class="heading-five item-title">S-Series Comfort Chair </h5>
                                <h5 class="heading-five price-up-down"> <span class="danger-color">$375</span> <del>$400</del></h5>
         
                                <div class="product-rating d-flex">
@@ -1113,7 +1140,7 @@
                             </div>
         
                             <div class="product-heading">
-                                <h5 class="heading-five">HAVIT HV-G92 Gamepad</h5>
+                                <h5 class="heading-five item-title">HAVIT HV-G92 Gamepad</h5>
                                 <h5 class="heading-five price-up-down"> <span class="danger-color">$120</span> <del>$160</del></h5>
         
                                 <div class="product-rating d-flex"> 
@@ -1156,7 +1183,7 @@
                            </div>
         
                            <div class="product-heading">
-                               <h5 class="heading-five">AK-900 Wired Keyboard</h5>
+                               <h5 class="heading-five item-title">AK-900 Wired Keyboard</h5>
                                <h5 class="heading-five price-up-down"> <span class="danger-color">$960</span> <del>$1160</del></h5>
         
                                <div class="product-rating d-flex">
@@ -1198,7 +1225,7 @@
                            </div>
         
                            <div class="product-heading">
-                               <h5 class="heading-five">IPS LCD Gaming Monitor</h5>
+                               <h5 class="heading-five item-title">IPS LCD Gaming Monitor</h5>
                                <h5 class="heading-five price-up-down"> <span class="danger-color">$370</span> <del>$400</del></h5>
         
                                <div class="product-rating d-flex">
@@ -1242,7 +1269,7 @@
                            </div>
         
                            <div class="product-heading">
-                               <h5 class="heading-five">S-Series Comfort Chair </h5>
+                               <h5 class="heading-five item-title">S-Series Comfort Chair </h5>
                                <h5 class="heading-five price-up-down"> <span class="danger-color">$375</span> <del>$400</del></h5>
         
                                <div class="product-rating d-flex">
@@ -1504,8 +1531,17 @@
 
 
  <!-- owl-carousel and jquery  link  -->
-<script src="js/jquery.min.js"></script>
+<!-- <script src="js/jquery.min.js"></script>
 <script src="js/owl.carousel.min.js"></script> 
-<script src="js/index.js"></script>
+<script src="js/data.js"></script>
+<script src="js/index.js"></script> -->
+
+
+ <!-- owl-carousel and jquery  link  -->
+ <script src="js/jquery.min.js"></script>
+ <script src="js/owl.carousel.min.js"></script> 
+ <script src="js/data.js"></script>
+ <script src="js/index.js"></script>
+ <script src="js/addtocart.js"></script>
 </body>
 </html>

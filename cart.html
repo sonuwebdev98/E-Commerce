@@ -90,7 +90,7 @@
 
             <div class="menu-list">
                 <ul class="nav-menu d-flex">
-                    <li class="nav-list"><a class="nav-link active-nav-link" href="#">home</a></li>
+                    <li class="nav-list"><a class="nav-link active-nav-link" href="index.html">home</a></li>
                     <li class="nav-list"><a class="nav-link" href="contact.html">contact</a></li>
                     <li class="nav-list"><a class="nav-link" href="about.html">about</a></li>
                     <li class="nav-list"><a class="nav-link" href="signup_paige.html">sign up</a></li>                    
@@ -105,10 +105,11 @@
                         <i class="fa-solid fa-magnifying-glass search-icons"></i>
                     </form>
                 </div> 
+                
                 <div class="saved-items right-items"><a class="top-link" href="wishlist.html"><i class="fas fa-thin fa-heart"></i></a></div>   
-                <div class="add-to-card right-items"><a class="top-link" href="cart.html"><i class="fas fa-light fa-cart-plus"></i></a></div>
-                <div class="user-account right-items"><a class="top-link" href="#"><i class="fas fa-light fa-user user-acount-details"></i> </a>
-                     
+                <div class="add-to-card right-items"><a class="top-link" href="cart.html"><i class="fas fa-light fa-cart-plus"><div id="cart_amount"></div></i></a></div>
+                <div class="user-account right-items"><a class="top-link" href="#"><i class="fas fa-light fa-user user-acount-details"></i> </a> 
+                      
                     <ul class="user-menu">
                         <li class="user-menu-list"><a class="user-menu-link" href="#"><i class="fas fa-light  fa-user user-acount-list"></i>Manage My Account</a></li>
                         <li class="user-menu-list"><a class="user-menu-link" href="#"><i class="fas fa-light fa-bag-shopping"></i>My Order</a></li>
@@ -168,7 +169,7 @@
                 <td><span id="#">$550</span></td>
                 <td><input type="number" id="tentacles" name="tentacles"  
                     min="10" max="100" value="5"></td>
-                <td align="right"><span  id="#">$650</span></td>
+                <td align="right"><span  id="#">$650</span></td> 
             </tr>
 
             <tr class="box-shodow-none shopcart-btn">
@@ -341,6 +342,18 @@
 
 
 
+ <!-- cart paige starts here  -->
+
+
+ <div class="cart_page">
+    <div class="shopping-cart" id="shopping_cart">0</div>
+    <div class="label" id="label"></div>
+ </div>
+
+
+
+  <!-- cart paige ends here  -->
+
 
 
 <!-- ======= fontawesome 6 =======  --> 
@@ -350,8 +363,11 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> 
 
  <!-- owl-carousel and jquery  link  -->
-<script src="js/jquery.min.js"></script>
-<script src="js/owl.carousel.min.js"></script> 
+<!-- <script src="js/jquery.min.js"></script> -->
+<!-- <script src="js/owl.carousel.min.js"></script>  -->
+<!-- <script src="js/addtocart.js"></script> -->
+<script src="js/data.js"></script> 
+<script src="js/cart.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>

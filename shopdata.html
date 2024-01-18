@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,23 +16,12 @@
 
  <!-- owl-carousel css link  -->
  <link rel="stylesheet" href="css/owl.carousel.css">
- <link rel="stylesheet" href="css/owl.theme.default.css">
- <!-- <link rel="stylesheet" href="css/owl.theme.green.css">  -->
-
-
- <!-- owl-carousel and jquery  link  -->
- <!-- <script src="js/jquery.min.js"></script>
- <script src="js/owl.carousel.min.js"></script> -->
- 
-
-<!-- swiper  -->
-<link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-
-
-  
+ <link rel="stylesheet" href="css/owl.theme.default.css">    
     <!-- css  -->
-    <!-- <link rel="stylesheet" href="css/global.css"> -->
-    <link rel="stylesheet" href="css/index.css">   
+    <!-- <link rel="stylesheet" href="css/global.css"> -->  
+    <link rel="stylesheet" href="css/index.css">    
+    
+
 </head>
 <body>
 
@@ -105,16 +94,16 @@
                         <i class="fa-solid fa-magnifying-glass search-icons"></i>
                     </form>
                 </div> 
-                <div class="saved-items right-items"><i class="fas fa-thin fa-heart"></i></div>   
-                <div class="add-to-card right-items"><i class="fas fa-light fa-cart-plus"></i></div>
-                <div class="user-account right-items"><i class="fas fa-light fa-user user-acount-details"></i> 
-                     
+                <div class="saved-items right-items"><a class="top-link" href="wishlist.html"><i class="fas fa-thin fa-heart"></i></a></div>   
+                <div class="add-to-card right-items"><a class="top-link" href="cart.html"><i class="fas fa-light fa-cart-plus" ><div id="cart_amount"></div></i></a></div>
+                <div class="user-account right-items"><a class="top-link" href="#"><i class="fas fa-light fa-user user-acount-details"></i> </a>
+                      
                     <ul class="user-menu">
                         <li class="user-menu-list"><a class="user-menu-link" href="#"><i class="fas fa-light  fa-user user-acount-list"></i>Manage My Account</a></li>
                         <li class="user-menu-list"><a class="user-menu-link" href="#"><i class="fas fa-light fa-bag-shopping"></i>My Order</a></li>
                         <li class="user-menu-list"><a class="user-menu-link" href="#"><i class="fas fa-sharp fa-light fa-circle-xmark"></i>My Cancellations</a></li>
                         <li class="user-menu-list"><a class="user-menu-link" href="#"><i class="fas fa-light fa-star"></i>My Reviews</a></li> 
-                        <li class="user-menu-list"><a class="user-menu-link" href="#"><i class="fas fa-light fa-right-from-bracket"></i>Logout</a></li>
+                        <li class="user-menu-list"><a class="user-menu-link" href="logIn_paige.html"><i class="fas fa-light fa-right-from-bracket"></i>Logout</a></li>
                     </ul>
                 </div> 
                         
@@ -132,179 +121,178 @@
 
 <!--========== header ends here  ========== -->
 
-<!-- ==========  product-items section starts here ========== -->
 
-<section  class="container-fluid"> 
+<!-- ========= banner start  here ========== -->
 
-    <div class="inner">
+ <section class="container-fluid">
 
-        <!-- breadcrumb starts here  -->
-       <div class="breadcrumb-sec">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a class="breadcrumb-link" href="account.html">Account /</a></li>
-              <li class="breadcrumb-item"><a class="breadcrumb-link" href="product_paige.html">Gaming /</a></li>
-              <li class="breadcrumb-item active" aria-current="page"><a class="breadcrumb-link breadcrumb-active-link" href="product_paige.html">Havic HV G-92 Gamepad</a></li>
-            </ol>
-          </nav>
-       </div>
+      <div class="inner d-flex banners-sec">
 
-       <div class="products-items d-flex">
-             <div class="product-items-left">
-                <div class="products-items-all-img product-contents">
-                    <div class="product-img">
-                       <img class="product-small-img" src="images/product-paige-img/gamepad/gamepad-1.png" alt="gamepad-1"  onmouseover="clickimg(this)" />
-                    </div>
-   
-                    <div class="product-img">
-                       <img class="product-small-img" src="images/product-paige-img/gamepad/gamepad-2.png" alt="gamepad-2" onmouseover="clickimg(this)" />
-                    </div>
-   
-                    <div class="product-img">
-                       <img class="product-small-img" src="images/product-paige-img/gamepad/gamepad-3.png" alt="gamepad-3" onmouseover="clickimg(this)" />
-                    </div>
-   
-                    <div class="product-img">
-                       <img class="product-small-img" src="images/product-paige-img/gamepad/gamepad-4.png" alt="gamepad-4" onmouseover="clickimg(this)" />
-                    </div>
-   
-               </div>
-   
-               <div class="products-items-mein-img product-contents ">
-                   <div class="product-img-view d-flex"> 
-                       <img id="active-img-box" class="product-big-img" src="images/product-paige-img/gamepad/gamepad-0.png" alt="gamepad-0" />
-                    </div>
-               </div>
-             </div>
-
-            <div class="products-items-content product-contents d-flex">
-                 <div class="products-items-top-heading">
-                    <h3 class="heading-theree">Havic HV G-92 Gamepad</h3>
+          <!-- leftsidebar  -->
+            <div class="banners-left-siderbar">
+                 <div class="inner-sider-bar">
+                    <ul class="sider-menu">
+                        <li class="siderbar-list"><a class="sidebar-link" href="#">Woman’s Fashion </a> <i class="fas fa-light fa-angle-right"></i></li>
+                        <li class="siderbar-list"><a class="sidebar-link" href="#">Men’s Fashion </a> <i class="fas fa-light fa-angle-right"></i></li>
+                        <li class="siderbar-list"><a class="sidebar-link" href="#">Electronics</a></li>
+                        <li class="siderbar-list"><a class="sidebar-link" href="#">Home & Lifestyle</a></li>
+                        <li class="siderbar-list"><a class="sidebar-link" href="#">Medicine</a></li>
+                        <li class="siderbar-list"><a class="sidebar-link" href="#">Sports & Outdoor</a></li>
+                        <li class="siderbar-list"><a class="sidebar-link" href="#">Baby’s & Toys</a></li>
+                        <li class="siderbar-list"><a class="sidebar-link" href="#">Groceries & Pets</a></li>
+                        <li class="siderbar-list"><a class="sidebar-link" href="#">Health & Beauty</a></li>
+                     </ul>
                  </div>
-
-                 <div class="products-items-rating">
-                    <div class="start-icons d-flex">
-                        <div class="start">
-                            <i class="fas fa-thin fa-star star-icon"></i>
-                            <i class="fas fa-thin fa-star star-icon"></i>
-                            <i class="fas fa-thin fa-star star-icon"></i>
-                            <i class="fas fa-thin fa-star star-icon"></i>
-                            <i class="fas fa-thin fa-star star-icon"></i>
-                        </div>
-
-                        <div class="review-stock d-flex">
-                            <span class="reviews">(150 review) | </span> 
-                            <p class="stocks">in stock</p>
-                        </div>
-                    </div>
-
-                    <div class="product-price">
-                        <span class="price">$192.00</span>
-                    </div>
-
-                    <div class="product-details">
-                        <p class="product-description">
-                            PlayStation 5 Controller Skin High quality vinyl with air
-                             channel adhesive for easy bubble free install & mess 
-                             free removal Pressure sensitive.
-                        </p>
-                    </div>
-                 </div>
-
-
-
-                 <div class="product-customize">
-                      <div class="product-color">
-                          <form action="#">
-                            <label class="product-color-heaing" for="forradio">color:</label>
-                            <input type="radio" name="color" id="color" >
-                            <input type="radio" name="color" id="color" >
-                          </form>
-                      </div>
-
-
-                      <div class="producut-size">
-                            <span class="producut-size-text">size:</span>
-
-                            <span class="products-sizes">
-                                <input type="submit" id="submit-size" value="XS">
-                            </span>
-
-                            <span class="products-sizes">
-                                <input type="submit" id="submit-size" value="S">
-                            </span>
-
-                            <span class="products-sizes">
-                                <input type="submit" id="submit-size" value="M"> 
-                            </span>
-
-                            <span class="products-sizes">
-                                <input type="submit" id="submit-size" value="L">
-                            </span>
-
-                            <span class="products-sizes">
-                                <input type="submit" id="submit-size" value="XL">
-                            </span>
-                            
-                      </div>
-
-                      <div class="product-quantity d-flex">
-                         <div class="product-data">
-                            <form action="#">
-                                <div class="data-change d-flex">
-                                 <button class="increment active-value">-</button> 
-                                 <span class="change-data">0</span>
-                                 <button class="decrement">+</button>
-                                </div>
-                                </form>
-                         </div>
-
-                         <div class="buy-now">
-                            <a href="#" class="view-all-pro-btns btn-animate buy-nows"> buy now</a>
-                         </div>
-
-                         <div class="saved-product">
-                            <i class="fas fa-thin fa-heart save-product-icon"></i>
-                         </div>
-                      </div>
-
-                      <div class="product-delivery">
-                         <div class="delivery d-flex">
-                            <div class="delivery-icon center-items"><img class="delivery-icons" src="images/product-paige-img/gamepad/icon-delivery.svg" alt="icon-delivery" /></div>
-                            <div class="delivery-text">
-                                <h5 class="heading-five">free delivery</h5>
-                                <p class="para">Enter your postal code for Delivery Availability</p>
-                            </div>
-                         </div>
-
-                         <div class="delivery d-flex">
-                            <div class="delivery-icon center-items"><img class="delivery-icons" src="images/product-paige-img/gamepad/Icon-return.svg" alt="Icon-return" /></div>
-                            <div class="delivery-text">
-                                <h5 class="heading-five">Return Delivery</h5>   
-                                <p class="para">Free 30 Days Delivery Returns. Details</p>
-                            </div>
-                         </div>
-
-                      </div>
-
-
-
-                 </div>
-                
             </div>
-            
-       </div>
-          
+       
+        <!-- right sidebar  -->
+       <div class="banners-right-slider">
+                   
 
+                   <!-- Slider main container -->
+
+
+
+  <!-- banner slider  starts here   -->
+  <div class="owl-carousel owl-carousel-six  owl-theme">
+    <div class="item">        
+        <div class="swiper-wrapper swiper-inner">
+            <!-- Slides 1 -->
+            <div class="swiper-slide swiper-slide-1 d-flex">
+      
+              <div class="slide-text">
+      
+                  <div class="top-content d-flex">
+                      <div class="img-apple"><img class="apple-logo-img" src="images/1200px-Apple_gray_logo 1.png" alt="1200px-Apple_gray_logo" /></div> 
+                      <div class="top-headings"> <h5 class="heading-five">iPhone 14 Series</h5></div> 
+                  </div>
+      
+                  <div class="center-content">
+                      <h1 class="price-off heading-one">Up to 10% <br> off Voucher</h1>
+                  </div>
+      
+                  <div class="bottom-content">
+                      <a href="#" class="shop-now-cdn">shop now <i class="fas fa-sharp fa-light fa-arrow-right right-arrow"></i></a> 
+                  </div>
+              </div>
+      
+              <div class="slide-img"> 
+                <img src="images/hero.png"   alt="hero" />
+              </div>  
+      
+            </div>
+
+          </div>    
+    </div>
+  <!-- Slides 2 -->
+    <div class="item">        
+        <div class="swiper-wrapper swiper-inner">
+          
+            <div class="swiper-slide swiper-slide-1 d-flex">
+      
+              <div class="slide-text">
+      
+                  <div class="top-content d-flex">
+                      <div class="img-apple"><img class="apple-logo-img" src="images/1200px-Apple_gray_logo 1.png" alt="1200px-Apple_gray_logo" /></div> 
+                      <div class="top-headings"> <h5 class="heading-five">iPhone 14 Series 2</h5></div> 
+                  </div>
+      
+                  <div class="center-content">
+                      <h1 class="price-off heading-one">Up to 10% <br> off Voucher</h1>
+                  </div>
+      
+                  <div class="bottom-content">
+                      <a href="#" class="shop-now-cdn">shop now <i class="fas fa-sharp fa-light fa-arrow-right right-arrow"></i></a> 
+                  </div>
+              </div>
+      
+              <div class="slide-img"> 
+                <img src="images/hero.png"   alt="hero" />
+              </div>  
+      
+            </div>
+
+          </div>    
     </div>
 
 
-</section>
+      <!-- Slides 3 -->
+      <div class="item">        
+        <div class="swiper-wrapper swiper-inner">
+          
+            <div class="swiper-slide swiper-slide-1 d-flex">
+      
+              <div class="slide-text">
+      
+                  <div class="top-content d-flex">
+                      <div class="img-apple"><img class="apple-logo-img" src="images/1200px-Apple_gray_logo 1.png" alt="1200px-Apple_gray_logo" /></div> 
+                      <div class="top-headings"> <h5 class="heading-five">iPhone 14 Series 2</h5></div> 
+                  </div>
+      
+                  <div class="center-content">
+                      <h1 class="price-off heading-one">Up to 10% <br> off Voucher</h1>
+                  </div>
+      
+                  <div class="bottom-content">
+                      <a href="#" class="shop-now-cdn">shop now <i class="fas fa-sharp fa-light fa-arrow-right right-arrow"></i></a> 
+                  </div>
+              </div>
+      
+              <div class="slide-img"> 
+                <img src="images/hero.png"   alt="hero" />
+              </div>  
+      
+            </div>
+
+          </div>    
+    </div>
+
+      <!-- Slides 3-->
+      <div class="item">        
+        <div class="swiper-wrapper swiper-inner">
+          
+            <div class="swiper-slide swiper-slide-1 d-flex">
+      
+              <div class="slide-text">
+      
+                  <div class="top-content d-flex">
+                      <div class="img-apple"><img class="apple-logo-img" src="images/1200px-Apple_gray_logo 1.png" alt="1200px-Apple_gray_logo" /></div> 
+                      <div class="top-headings"> <h5 class="heading-five">iPhone 14 Series 2</h5></div> 
+                  </div>
+      
+                  <div class="center-content">
+                      <h1 class="price-off heading-one">Up to 10% <br> off Voucher</h1>
+                  </div>
+      
+                  <div class="bottom-content">
+                      <a href="#" class="shop-now-cdn">shop now <i class="fas fa-sharp fa-light fa-arrow-right right-arrow"></i></a> 
+                  </div>
+              </div>
+      
+              <div class="slide-img"> 
+                <img src="images/hero.png"   alt="hero" />
+              </div>  
+      
+            </div>
+
+          </div>    
+    </div>
+
+</div>
+      
 
 
 
+ <!-- banner slider  ends here   -->
+  
 
- 
+                   
+            </div>
+      </div>
+
+ </section>
+
+<!-- ========= banner ends  here ========== -->
 
 
 
@@ -318,21 +306,56 @@
     <div class="inner">
 
              <!-- todays-heading  -->
-             <div class="todays-heading"> 
-                   <div class="headings">
-                        <h5 class="heading-five danger-color text-capitalize">Related Item</h5> 
+             <div class="todays-heading">  
+                   <div class="headings d-flex">  
+                        <h5 class="heading-five danger-color text-capitalize">today's</h5>                         
                    </div>  
+
+
+                   <div class="flash-heading"><h2 class="heading-two text-capitalize text-center title" id="end-date">Sale Start</h2></div>
                    
-                
+                   <div class="flash-sale-section d-flex">  
+                    <div class="flash-heading"><h2 class="heading-two text-capitalize">flash sales</h2></div>
+                      
+                      <div class="flash-sale-timing">
+                           <div class="time-sec d-flex">
+
+                            <div class="times">
+                                <label class="heading-six" for="">days</label>
+                                <input class="time-loop" type="number" readonly value="00">
+                            </div>
+
+                            <div class="times">
+                                <label class="heading-six" for="">hour</label>
+                                <input class="time-loop" type="number" readonly value="00">
+                            </div>
+
+                            <div class="times">                             
+                                <label class="heading-six" for="">minutes</label>
+                                <input class="time-loop" type="number" readonly value="00">
+                            </div>
+
+                            <div class="times">
+                                <label class="heading-six" for="">second</label>
+                                <input class="time-loop" type="number" readonly value="00">
+                            </div>
+
+                           </div>
+                      </div>                       
+                   </div>
              </div>
 
+   
             
      <!--==================== todays-list-slider  =====================-->
              <div class="todays-list-slider">  
+
+
                     
-                <div class="owl-carousel owl-carousel-one owl-theme"> 
-                    <div class="item">
-                        <div class="sale-items">
+                <div class="owl-carousel owl-carousel-one owl-theme">
+                    <!-- 1 -->                     
+                    <div class="item" >
+                        <div class="sale-items" id="item1">  
                              <div class="sale-img"> 
                                 <img class="sale-img-1"  src="images/todaysales/wired-gamepad.png" alt="wired-gamepad" />
                                 <div class="discount">
@@ -340,7 +363,7 @@
                                 </div>
 
                                 <div class="saved_view_btns d-flex"> 
-                                    <i class="fas fa-sharp fa-light fa-heart saved-view-icon"></i> 
+                                    <i class="fas fa-sharp fa-light fa-heart saved-view-icon save_to_whishlist"></i> 
                                     <i class="fas fa-light fa-eye saved-view-icon"></i> 
                                 </div>
                             </div>
@@ -350,8 +373,8 @@
                             </div>
 
                             <div class="sale-heading">
-                                <h5 class="heading-five">HAVIT HV-G92 Gamepad</h5>
-                                <h5 class="heading-five price-up-down"> <span class="danger-color">$120</span> <del>$160</del></h5>
+                                <h5 class="heading-five item-title" id="title">HAVIT HV-G92 Gamepad</h5>
+                                <h5 class="heading-five price-up-down" id="price"> <span class="danger-color">$120</span> <del>$160</del></h5>
 
                                 <div class="sale-rating d-flex"> 
 
@@ -363,7 +386,7 @@
                                       <img class="star" src="images/star.png" alt="star" />    
                                     </div>
 
-                                    <div class="sale-quantity"><span class="quantity-items">(88)</span></div>
+                                    <div class="sale-quantity"><span class="quantity-items" >(88)</span></div>
 
 
                                 </div> 
@@ -371,6 +394,8 @@
                             </div>                            
                         </div>
                     </div>
+
+                    <!-- 2  -->
 
 
                     <div class="item">
@@ -383,7 +408,7 @@
                             </div>
 
                             <div class="saved_view_btns d-flex">
-                                <i class="fas fa-sharp fa-light fa-heart saved-view-icon"></i>
+                                <i class="fas fa-sharp fa-light fa-heart saved-view-icon save_to_whishlist"></i>
                                 <i class="fas fa-light fa-eye saved-view-icon"></i>
                             </div>
                            </div>
@@ -393,7 +418,7 @@
                            </div>
 
                            <div class="sale-heading">
-                               <h5 class="heading-five">AK-900 Wired Keyboard</h5>
+                               <h5 class="heading-five item-title">AK-900 Wired Keyboard</h5>
                                <h5 class="heading-five price-up-down"> <span class="danger-color">$960</span> <del>$1160</del></h5>
 
                                <div class="sale-rating d-flex">
@@ -425,7 +450,7 @@
                             </div>
 
                             <div class="saved_view_btns d-flex">
-                                <i class="fas fa-sharp fa-light fa-heart saved-view-icon"></i>
+                                <i class="fas fa-sharp fa-light fa-heart saved-view-icon save_to_whishlist"></i>
                                 <i class="fas fa-light fa-eye saved-view-icon"></i>
                             </div>
                            </div>
@@ -435,7 +460,7 @@
                            </div>
 
                            <div class="sale-heading">
-                               <h5 class="heading-five">IPS LCD Gaming Monitor</h5>
+                               <h5 class="heading-five item-title">IPS LCD Gaming Monitor</h5>
                                <h5 class="heading-five price-up-down"> <span class="danger-color">$370</span> <del>$400</del></h5>
 
                                <div class="sale-rating d-flex">
@@ -468,7 +493,7 @@
                                </div>
 
                             <div class="saved_view_btns d-flex">
-                                <i class="fas fa-sharp fa-light fa-heart saved-view-icon"></i> 
+                                <i class="fas fa-sharp fa-light fa-heart saved-view-icon save_to_whishlist"></i> 
                                 <i class="fas fa-light fa-eye saved-view-icon"></i>
                             </div>
 
@@ -479,8 +504,10 @@
                            </div>
 
                            <div class="sale-heading">
-                               <h5 class="heading-five">S-Series Comfort Chair </h5>
+                               <h5 class="heading-five item-title">S-Series Comfort Chair </h5>
                                <h5 class="heading-five price-up-down"> <span class="danger-color">$375</span> <del>$400</del></h5>
+
+
 
                                <div class="sale-rating d-flex">
                                    <div class="star-rating d-flex">
@@ -515,7 +542,35 @@
         </div>
 
 </section>
-<!--==================== todays sections ends here =====================-->
+<!--  ==================== todays sections ends here =====================   -->
+
+
+<!-- ==================== 
+    View Product sections starts here
+                       ===================== -->
+
+                       <div class="container-fluid section">
+                           <div class="inner">
+                                               
+     <div  class="shopCart" id="shopCart">
+
+     </div>
+
+
+                           </div>
+     
+                       </div>
+
+
+
+
+
+<!-- ==================== 
+    View Product sections ends here
+                       ===================== -->
+
+
+
 
 
 
@@ -600,16 +655,9 @@
 
 
 
-
-
-
-
-
-
 <div class="top-bottom-btns"> 
-    <a href="#header"><i class="fas fa-regular fa-arrow-up fa-beat top-btm-btns"></i></a>
+    <a href="#"><i class="fas fa-regular fa-arrow-up fa-beat top-btm-btns"></i></a>
  </div>
-
 
 
 
@@ -617,12 +665,12 @@
 <!-- ======= fontawesome 6 =======  --> 
 <script src="https://kit.fontawesome.com/b94d79425b.js" crossorigin="anonymous"></script>
 
-<!-- swiper js  -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> 
 
  <!-- owl-carousel and jquery  link  -->
 <script src="js/jquery.min.js"></script>
 <script src="js/owl.carousel.min.js"></script> 
+<script src="js/data.js"></script>
 <script src="js/index.js"></script>
+<script src="js/addtocart.js"></script>
 </body>
 </html>
