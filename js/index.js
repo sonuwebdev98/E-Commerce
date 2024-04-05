@@ -55,15 +55,15 @@ additem.addEventListener('click' ,  function(){
 
 // ========= Countdown start here ========= //
 
-const enddate = "10 Mar 2024 11:00 PM";
+const enddate =     "10 Dec 2024 10:00  AM";
 document.getElementById("end-date").innerText = enddate;
 
 const  time_loop =document.querySelectorAll(".time-loop")
 
 
 function clock(){
-
-  const end = new Date(enddate)
+ 
+  const end = new Date(enddate) 
   const now = new Date()
   const diff = (end - now) / 1000;
 
@@ -72,9 +72,9 @@ function clock(){
  
 
   // convert into days 
-  time_loop[0].value = Math.floor(diff / 3600 / 24);
+  time_loop[0].value = Math.floor(diff / 3600 / 24); 
   time_loop[1].value = Math.floor(diff / 3600 ) % 24; 
-  time_loop[2].value = Math.floor(diff / 60) % 24;
+  time_loop[2].value = Math.floor(diff / 60)  % 12;
   time_loop[3].value = Math.floor(diff ) % 60;
 
 
@@ -82,7 +82,7 @@ function clock(){
 }
 
 clock();
-
+ 
 setInterval(
 
   () => {
@@ -124,6 +124,10 @@ Save_To_Whishlist.forEach((elem, index) => {
 
 // whishadd section  ends here 
 
+
+let sonu = () =>{
+  
+}
 
 
 

@@ -14,13 +14,13 @@ shopCart.innerHTML =  shopItemData.map((x) => {
 
   return `
 
-  <div class="productitem"  id=shopCart-${id}>
+  <div class="productitem productitem-wrapper"  id=shopCart-${id}>
     
   <img src='${Img}' alt='' />
   <div>${desc} </div>
   
   <div class='product_info'> 
-  <h5>${name}</h5>
+  <h5 class="product-title">${name}</h5>
   
   </div>
   
@@ -37,7 +37,7 @@ shopCart.innerHTML =  shopItemData.map((x) => {
   `
 
 })
-}
+}  
 
 
 genrateShop();
@@ -70,5 +70,18 @@ let calculate = () =>{
 
 calculate();
 
-// add to cart section ends here 
+// add to cart section ends here  
+
+
+
+const productItemWrapper = document.querySelectorAll(".productitem-wrapper");
+productItemWrapper.forEach((element, index) => {
+  element.addEventListener('click', function(e){
+    const productTitle = element.querySelector(".product_info .product-title").innerText;
+    let newArr = shopItemData.filter(item => item.name === productTitle)
+    console.log(newArr[0].id);
+
+    
+  })
+})
 

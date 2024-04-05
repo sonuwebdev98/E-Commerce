@@ -1,4 +1,4 @@
-let label = document.getElementById('label')
+let label = document.getElementById('label') 
 
 let shoppingcart = document.getElementById('shopping_cart')
 

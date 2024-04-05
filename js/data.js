@@ -1,7 +1,7 @@
 let shopItemData = [
 
     {
-        "id":1,
+        "id":"lastSlide_1",
         "name":"Gamepad 1",
         "price": 200 ,
         "desc":"Gaming Console",
@@ -40,3 +40,8 @@ let shopItemData = [
 
 
 ]
+
+
+
+
+
