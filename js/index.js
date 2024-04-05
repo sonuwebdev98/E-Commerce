@@ -55,7 +55,7 @@ additem.addEventListener('click' ,  function(){
 
 // ========= Countdown start here ========= //
 
-const enddate ="10 Dec 2024 10:00  AM";
+const enddate ="10 Sep 2024 10:00  AM";
 document.getElementById("end-date").innerText = enddate;
 
 const  time_loop =document.querySelectorAll(".time-loop")
